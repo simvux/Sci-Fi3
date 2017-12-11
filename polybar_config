@@ -1,0 +1,152 @@
+[colors]
+fore 	= #4db6ac
+forealt = #4d9db6
+trans	= #000000FF
+strong 	= #ac4db6
+
+[bar/AlmightyFloppyFish]
+width		= 100%
+height		= 18
+fixed-center 	= true
+
+monitor = eDP-1
+
+background = ${colors.trans}
+foreground = ${colors.fore}
+
+font-0 = "Terminus:pixelsize=12;2"
+font-1 = "FontAwesome:pixelsize=10;2"
+
+modules-left 	= active-workspace i3 
+modules-center 	= date
+modules-right	= cpu volume battery 
+
+tray-padding = 3
+tray-position	= right
+
+[module/i3]
+type 	= internal/i3
+format 	= <label-state><label-mode>
+
+label-active-font = 1
+
+ws-icon-default = 
+
+pin-workspaces = true
+
+label-mode-foreground = ${colors.fore}
+label-mode-background = ${colors.trans}
+
+label-mode 	= " %mode% "
+
+label-focused	= 
+label-unfocused = 
+
+label-focused-padding	= 1
+label-unfocused-padding	= 1
+
+label-focused-foreground 	= ${colors.fore}
+label-focused-background 	= ${colors.trans}
+label-unfocused-background 	= ${colors.trans}
+label-unfocused-foreground	= ${colors.fore}
+label-urgent-foreground  	= ${colors.strong}
+
+enable-click 	= false
+enable-scroll	= false
+
+[module/active-workspace]
+type = internal/i3
+format = <label-state>
+
+label-focused = "%{F#ac4db6} %name%%{F-} "
+label-focused-foreground = ${colors.fore}
+label-focused-background = ${colors.trans}
+
+label-unfocused =
+label-urgent =
+
+
+[module/date]
+type = internal/date
+
+label = %time% | %date%
+label-margin = 10
+
+interval = 1.0
+
+time = %H:%M
+date = %Y/%m-%d
+
+
+[module/battery]
+type = internal/battery
+
+full-at = 95
+
+format-charging 	=  <animation-charging> <label-charging>
+format-discharging 	= <ramp-capacity> <label-discharging>
+
+ramp-capacity-0 = %{colors.strong} %{F-}
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+ramp-capacity-foreground = ${colors.fore}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.fore}
+animation-charging-framerate = 750
+
+format-charging-padding 	= 4
+format-discharging-padding 	= 4
+
+label-full =  
+
+
+[module/volume]
+type = internal/volume
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-padding = 0
+
+label-muted = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+
+[module/cpu]
+type = internal/cpu
+
+format = <ramp-load>
+
+format-padding = 4
+
+ramp-load-0 = |
+ramp-load-1 = |%{F#44b2b3}|
+ramp-load-2 = |%{F#44b2b3}|%{F#2b82ac}|
+ramp-load-3 = |%{F#44b2b3}|%{F#2b82ac}|%{F#1c5da7}|
+ramp-load-4 = |%{F#44b2b3}|%{F#2b82ac}|%{F#1c5da7}|%{F#1448a5}|
+ramp-load-5 = |%{F#44b2b3}|%{F#2b82ac}|%{F#1c5da7}|%{F#1448a5}|%{F#0d33a2}|
+ramp-load-6 = |%{F#44b2b3}|%{F#2b82ac}|%{F#1c5da7}|%{F#1448a5}|%{F#0d33a2}|%{F#061da0}|
+ramp-load-7 = |%{F#48bcbd}|%{F#2b82ac}|%{F#1c5da7}|%{F#1448a5}|%{F#0d33a2}|%{F#061da0}|%{F#00079e}|%{F-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
