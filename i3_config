@@ -176,7 +176,7 @@ exec --no-startup-id compton
 exec --no-startup-id i3-msg 'workspace 8; exec xpad -s'
 exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/arch.png
 exec --no-startup-id nm-applet
-exec --no-startup-id /home/simon/.config/simplebar/launch.sh
+exec --no-startup-id $HOME/.config/scibar/launch.sh
 
 client.focused #4db6ac #4db6ac #4db6ac #4db6ac #4db6ac
 

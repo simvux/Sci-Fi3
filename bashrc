@@ -125,19 +125,6 @@ function cd {
     builtin cd "$@" && ls
 }
 
-export GOPATH=$HOME/Code/go/
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/$HOME/Code/go/bin
-
-alias govim="cd ~/Code/go/src/Programs && govimhere"
-alias gopath="cd ~/Code/go/src/Programs"
-alias ccompilestuff="export CXX=x86_64-w64-mingw32-g++ && export CC=x86_64-w64-mingw32-gcc"
-alias giffpath="sudo find / -iname"
-alias youtube="mpsyt"
-alias word="libreoffice --writer"
-alias syn="synergyc 192.168.1.47"
-alias powerpoint="libreoffice --impress"
-
 shopt -s -q cdspell
 
 # Powerline Shell
