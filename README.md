@@ -23,10 +23,10 @@ Set polybar config as used config
 mv polybar_config ~/.config/scibar/config
 mv startpolybar.sh ~/.config/scibar/launch.sh```  
 
-Set bashrc as used .bashrc (Optional | If you skip this step you'll have to enable polybar manually)
+Set bashrc as used .bashrc (Optional | If you skip this step you'll have to enable powerline manually)
 ```mv ~/.bashrc ~/.bashrc.bak && mv bashrc ~/.bashrc```  
 
-Install konsole profile/colors
+Install konsole profile/colors. // There's prob a better way to import konsole config, i don't even know if this one works
 ```mv Main.colorscheme ~/.local/share/konsole/
 mv "SciFi3.profile" ~/.local/share/konsole/```
 Select SciFi3 as profile in Konsole settings
